@@ -38,7 +38,7 @@ SGE - Marcas
         {% for brand in brands %}
         <tr>
           <td>
-            <a class="text-primary fw-semibold">
+            <a class="text-primary fw-semibold" href="{% url 'brand_detail' brand.id %}">
               {{ brand.id }}
             </a>
           </td>
